@@ -2,26 +2,45 @@ html {
   background-color: #495562;
   font-family: Georgia, serif;
   color: #fff;
-
-}
-
-*, *::before, *::after {
-}
-
-img {
-  max-height: 500px;
 }
 
 .btn {
   color: #fff;
-}
-
-.btn btn-ghost {
-  border: #495562;
+  border-color: #efefef;
 }
 
 .btn:hover {
   background-color: #fff;
-  border: #495562;
+  border-color: #97a49b;
   color: #495562;
+}
+
+.banner-content {
+  max-width: 25em;
+}
+
+@media only screen and (min-width: 42em) {
+
+  .banner-content {
+    bottom: 6em;
+    position: absolute;
+    max-width: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(to top, rgba(73, 85, 98, 1), rgba(73, 85, 98, 0));
+  }
+
+  .banner-image {
+    position: relative;
+    max-height: 500px;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  p {
+    display: inline-block;
+    margin-right: 25%;
+  }
+
 }
