@@ -15,23 +15,20 @@ html {
   color: #495562;
 }
 
-.banner-content {
-  max-width: 25em;
-}
-
-@media only screen and (min-width: 42em) {
+@media only screen and (min-width: 60em) {
 
   .banner-content {
-    bottom: 6em;
     position: absolute;
+    bottom: 0;
     max-width: 100%;
     background-color: transparent;
     background-image: linear-gradient(to top, rgba(73, 85, 98, 1), rgba(73, 85, 98, 0));
   }
 
-  .banner-image {
+  .banner {
     position: relative;
     max-height: 500px;
+    overflow: hidden;
   }
 
 }
